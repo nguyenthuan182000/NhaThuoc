@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nhà thuốc</title>
-    <link rel="stylesheet" href="{{ asset('frontend/css/main.css') }}">
+
 
     {{-- Boostrap --}}
     <link rel="stylesheet" href="{{ asset('frontend/lib/bootstrap/css/bootstrap.min.css') }}">
-
     {{-- Semantic --}}
     <link rel="stylesheet" href="{{ asset('frontend/lib/Semantic-UI/semantic.min.css') }}">
+    {{-- FontAwesome --}}
+    <link rel="stylesheet" href="{{ asset('frontend/lib/fontawesome/css/all.min.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('frontend/css/main.css') }}">
 </head>
 
 <body>
@@ -32,12 +35,15 @@
         </footer>
     </div>
 
-    <script src="{{ asset('frontend/js/main.js') }}"></script>
+
     {{-- Boostrap --}}
     <script src="{{ asset('frontend/lib/bootstrap/js/bootstrap.min.js') }}"></script>
-
     {{-- Semantic --}}
     <script src="{{ asset('frontend/lib/Semantic-UI/semantic.min.js') }}"></script>
+    {{-- FontAwesome --}}
+    <script src="{{ asset('frontend/lib/fontawesome/js/all.min.js') }}"></script>
+
+    <script src="{{ asset('frontend/js/main.js') }}"></script>
 </body>
 
 </html>
