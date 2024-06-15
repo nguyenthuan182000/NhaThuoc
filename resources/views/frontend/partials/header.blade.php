@@ -10,6 +10,10 @@
                 <div class="download">
                     <i class="fa-solid fa-mobile-button me-2" style="color: #ffffff;"></i>
                     Tải ứng dụng
+
+                    <div class="wrapper-qr">
+                        <img src="{{ asset('frontend/images/qr-code.webp') }}" alt="Mã QR">
+                    </div>
                 </div>
 
                 <div class="contact">
@@ -53,6 +57,19 @@
                     </div>
                 </div>
             </div>
+
+            <ul class="list-search">
+                <li class="item-search">dung dịch vệ sinh</li>
+                <li class="item-search">sữa rửa mặt</li>
+                <li class="item-search">thuốc nhỏ mắt</li>
+                <li class="item-search">omega 3</li>
+                <li class="item-search">sắt</li>
+                <li class="item-search">men vi sinh</li>
+                <li class="item-search">Dhc</li>
+                <li class="item-search">Kẽm</li>
+            </ul>
         </div>
+
+
     </div>
 </section>

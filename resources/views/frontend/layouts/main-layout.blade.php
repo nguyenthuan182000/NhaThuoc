@@ -19,20 +19,30 @@
 </head>
 
 <body>
-
-    {{-- Main --}}
     <div class="wrapper">
+        {{-- Start Header --}}
         <header id="header">
             @include('frontend.partials.header')
         </header>
+        {{-- End Header --}}
 
-        <main>
+        {{-- Start Nav --}}
+        <nav id="navbar">
+            @include('frontend.partials.menu')
+        </nav>
+        {{-- End Nav --}}
+
+        {{-- Start Main --}}
+        <main id="main" style="height: 500px; background-color: #b7b3b3">
             @yield('content')
         </main>
+        {{-- End Main --}}
 
+        {{-- Start Footer --}}
         <footer id="footer">
 
         </footer>
+        {{-- End Footer --}}
     </div>
 
 
