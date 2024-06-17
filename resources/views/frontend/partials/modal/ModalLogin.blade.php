@@ -6,7 +6,8 @@
     </div>
     <form class="mb-4">
         <div class="wrapper-form-login">
-            <input type="gmail" class="form-control mb-4" placeholder="Vui lòng nhập địa chỉ gmail">
+            <input type="gmail" class="form-control mb-4" placeholder="Vui lòng nhập địa chỉ gmail" name="email">
+            <input type="password" class="form-control mb-4" placeholder="Vui lòng nhập password" name="password">
             <button class="btn btn-primary btn-login">Đăng nhập</button>
         </div>
     </form>
