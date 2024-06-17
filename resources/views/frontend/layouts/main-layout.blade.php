@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nhà thuốc</title>
 
-
     {{-- Boostrap --}}
     <link rel="stylesheet" href="{{ asset('frontend/lib/bootstrap/css/bootstrap.min.css') }}">
     {{-- Semantic --}}
@@ -15,6 +14,7 @@
     {{-- FontAwesome --}}
     <link rel="stylesheet" href="{{ asset('frontend/lib/fontawesome/css/all.min.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('frontend/css/utilities.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/main.css') }}">
 </head>
 
