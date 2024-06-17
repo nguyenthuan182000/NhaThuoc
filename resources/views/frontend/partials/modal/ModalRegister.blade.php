@@ -4,7 +4,7 @@
     </div>
     <div class="modal-body">
         <div class="text-center">
-            <h2 class="title-login">Đăng nhập</h2>
+            <h2 class="title-login">Đăng Ký</h2>
             <p class="text-login mb-4">Vui lòng đăng nhập để hưởng những đặc quyền dành cho thành viên.
             </p>
         </div>
