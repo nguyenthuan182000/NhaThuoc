@@ -17,4 +17,8 @@ $(document).ready(function () {
         }
     }
 
+    $('.single-item').slick({
+        infinite: true,
+        arrows: true
+    });
 })

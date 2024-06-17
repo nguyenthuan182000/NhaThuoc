@@ -30,7 +30,13 @@ ul {
 :root {
     --color-white: #fff;
     --color-black: #000;
+    --color-primary: #3c6cdc;
     --tw-bg-opacity: 1;
+    --bx-shadow-primary: 0px 0px 16px -4px rgba(0, 39, 102, 0.08),
+        0px 0px 6px -2px rgba(0, 39, 102, 0.03);
+}
+.container {
+    padding-inline: 32px;
 }
 
 /* Header */
@@ -44,10 +50,6 @@ ul {
     ); */
     background-image: url("../images/header-bg.webp");
     background-repeat: no-repeat;
-}
-
-#header-info .container {
-    padding-inline: 32px;
 }
 
 #header-info .wrapper-header {
@@ -125,6 +127,20 @@ ul {
     display: grid;
     grid-template-columns: auto 60% auto;
     align-items: center;
+}
+
+#header-info .header-top .nav .nav-logo {
+    display: flex;
+}
+
+#header-info .header-top .nav .nav-logo a {
+    margin: auto;
+}
+
+#header-info .header-top .nav .nav-logo a img {
+    width: 100%;
+    height: 100%;
+    max-width: 80px;
 }
 
 #header-info .header-top .nav .nav-filter .wrapper-filer {
@@ -422,6 +438,33 @@ ul {
     background-color: #fff;
     border-radius: 15px;
     margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#navbar
+    .wrapper-menu
+    .dropdown
+    .tabcontent
+    .section-product-selling
+    .wrapper-list-product-selling
+    .box-product
+    .product-selling__img
+    .box-percent__sale {
+    width: 60px;
+    height: 30px;
+    color: var(--color-white);
+    font-weight: 600;
+    position: absolute;
+    background-color: #ffe53b;
+    background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0;
+    font-size: 1.4rem;
 }
 
 #navbar
@@ -452,4 +495,327 @@ ul {
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
+}
+
+#navbar
+    .wrapper-menu
+    .dropdown
+    .tabcontent
+    .section-product-selling
+    .wrapper-list-product-selling
+    .box-product
+    .product-selling__price
+    .price-new {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+#navbar
+    .wrapper-menu
+    .dropdown
+    .tabcontent
+    .section-product-selling
+    .wrapper-list-product-selling
+    .box-product
+    .product-selling__price
+    .price-new
+    span {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#navbar
+    .wrapper-menu
+    .dropdown
+    .tabcontent
+    .section-product-selling
+    .wrapper-list-product-selling
+    .box-product
+    .product-selling__price
+    .price-old {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+}
+
+/* Slider */
+.slider {
+    background-color: #f8fbff;
+}
+
+.slider .wrapper-slider {
+    padding: 16px 6rem 3rem 6rem;
+}
+
+.slider .wrapper-slider .left .carousel-inner .carousel-item img {
+    border-radius: 20px;
+}
+
+.slider .wrapper-slider .left .carousel-control-prev {
+    background: rgb(95, 94, 94);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+.slider .wrapper-slider .left .carousel-control-next {
+    background: rgb(95, 94, 94);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+}
+
+.slider .wrapper-slider .right .silder-img img {
+    border-radius: 20px;
+}
+
+.slider .wrapper-slider .right .silder-img:first-child {
+    margin-bottom: 1rem;
+}
+
+.slider .wrapper-slider .box-slider {
+    background-color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: var(--bx-shadow-primary);
+}
+
+.slider .wrapper-slider .box-slider a {
+    display: flex;
+    align-items: center;
+}
+
+.slider .wrapper-slider .box-slider img {
+    object-fit: contain;
+}
+
+.slider .wrapper-slider .box-slider a span {
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    font-weight: 700;
+    color: var(--color-black);
+    line-height: 2.2rem;
+}
+
+/* Product sell*/
+.product__sell {
+    background: linear-gradient(rgb(253, 246, 238) 0%, rgb(255, 254, 253) 100%);
+}
+
+.product__sell .wrapper-product__sell {
+    padding: 0 6rem;
+}
+
+.product__sell .box-product__sell {
+    position: relative;
+    left: 42%;
+    top: -10px;
+}
+
+.product__sell .box-product__sell .title-product__sell {
+    position: absolute;
+    top: -25%;
+    left: 4%;
+    color: var(--color-white);
+    font-size: 1.8rem;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell {
+    background-color: var(--color-white);
+    box-shadow: var(--bx-shadow-primary);
+    border-radius: 15px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell:hover {
+    border: 1px solid var(--color-primary);
+    transition: all;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell .box-content__img {
+    position: relative;
+}
+
+.product__sell
+    .wrapper-product__sell
+    .box-content__sell
+    .box-content__img
+    .product-sale__sell {
+    position: absolute;
+    background: linear-gradient(295deg, #cd1a0c 0%, #ff5246 98.45%);
+    top: -8%;
+    padding: 0.2rem 1.5rem;
+    left: -8%;
+    border-radius: 15px 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell .box-content__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell .content p {
+    font-size: 1.5rem;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell .price .price__new {
+    font-size: 1.7rem;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.product__sell
+    .wrapper-product__sell
+    .box-content__sell
+    .price
+    .price__new
+    span {
+    font-weight: 500;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell .price .price__old {
+    text-decoration: line-through;
+    color: #8c8a8a;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell .price {
+    margin-bottom: 0.5rem;
+    height: 40px;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell .total span {
+    background-color: #e7e5e5;
+    width: max-content;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    height: 28px;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell .btn-sell {
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    margin: 2rem 0 0.8rem 0;
+}
+
+.product__sell .wrapper-product__sell .box-content__sell .btn-sell a {
+    color: var(--color-white);
+}
+
+/* Vaccination */
+.product__sell .wrapper-vaccination {
+    padding: 0 6rem;
+}
+
+.product__sell .wrapper-vaccination .wrapper__img {
+    background-image: url("https://cdn.nhathuoclongchau.com.vn/unsafe/0x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/BG_TTTC_block_1216x302_3ad9a7bf6e.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 32px 24px;
+}
+
+.product__sell .wrapper-vaccination .wrapper__img .title__vaccination {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.product__sell .wrapper-vaccination .wrapper__img .title__vaccination h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.product__sell .wrapper-vaccination .wrapper__img .title__vaccination p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(74 79 99/1);
+}
+
+.product__sell .wrapper-vaccination .wrapper__img .box__vaccination {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.8rem;
+    border-radius: 10px;
+    box-shadow: var(--bx-shadow-primary);
+}
+
+.product__sell
+    .wrapper-vaccination
+    .wrapper__img
+    .box__vaccination
+    .img-box__vaccination {
+    width: 85px;
+    height: 70px;
+    background: #eaeffa;
+    display: flex;
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
+.product__sell
+    .wrapper-vaccination
+    .wrapper__img
+    .box__vaccination
+    .img-box__vaccination
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.product__sell
+    .wrapper-vaccination
+    .wrapper__img
+    .box__vaccination
+    .content-box__vaccination
+    h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.product__sell
+    .wrapper-vaccination
+    .wrapper__img
+    .box__vaccination
+    .content-box__vaccination
+    p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product__sell
+    .wrapper-vaccination
+    .wrapper__img
+    .box__vaccination
+    .content-box__vaccination
+    a {
+    font-size: 1.5rem;
+    font-weight: 600;
 }

@@ -27,7 +27,7 @@
             <div class="nav">
                 <div class="nav-logo">
                     <a href="#" class="link-logo">
-                        <img src="{{ asset('frontend/images/logo-header.svg') }}" alt="Logo" class="img-logo">
+                        <img src="{{ asset('frontend/images/logo-header.jpg') }}" alt="Logo" class="img-logo">
                     </a>
                 </div>
 
