@@ -45,7 +45,8 @@
 
                 <div class="nav-action">
                     <div class="wrapper-action">
-                        <a class="link-sign-up show-modal" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                        <a class="link-sign-up show-modal" data-bs-toggle="modal" data-bs-target="#modalLogin"
+                            data-attr="{{ route('Modal.showLogin') }}">
                             <i class="fa-solid fa-user me-3" style="color: #ffffff;"></i>
                             Đăng nhập
                         </a>
@@ -71,14 +72,6 @@
         </div>
     </div>
 
-
-    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered wrapper">
-            Loading...
-        </div>
-    </div>
-
-
-    @include('frontend.partials.modal.ModalLogin')
-    @include('frontend.partials.modal.ModalRegister')
+    {{-- Modal Login --}}
+    @include('frontend.components.ModalLogin')
 </section>

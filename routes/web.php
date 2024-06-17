@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Modal\ShowModalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('frontend/layouts/main-layout');
+});
+
+Route::prefix('modal')->group(function () {
+    Route::get('/show-login', [ShowModalController::class, 'showLogin'])->name('Modal.showLogin');
 });
